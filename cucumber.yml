@@ -1,0 +1,11 @@
+---
+  default : -p pretty -p html -p json -p dev -p env_dev -p xml --publish-quiet
+
+  source: --no-source
+  progress: --format progress
+  pretty: --format pretty
+  dev: ENV_TYPE=dev
+  env_dev: ENV_PREFIX=dev
+  html: --format html --out=report/report.html
+  json: --format json --out=report/report.json
+  xml: --format junit --out=report/junit

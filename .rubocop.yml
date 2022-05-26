@@ -1,0 +1,53 @@
+---
+  AllCops:
+    NewCops: disable
+
+  Style/Documentation:
+    Enabled: false
+
+  Style/FrozenStringLiteralComment:
+    Enabled: false
+  
+  Style/NumericLiteralPrefix:
+    Enabled: false
+
+  Style/SingleArgumentDig:
+    Enabled: false
+
+  Lint/ParenthesesAsGroupedExpression:
+    Enabled: false
+
+  Naming/MethodName:
+    Enabled: false
+
+  Naming/AsciiIdentifiers:
+    Enabled: false
+
+  Layout/LineLength:
+    Max: 160
+
+  Metrics/MethodLength:
+    Max: 20
+    Exclude:
+      - 'features/support/models/*.rb'
+      - 'features/support/libs/*.rb'
+
+  Metrics/AbcSize:
+    Enabled: false
+
+  Metrics/BlockLength:
+    Max: 35
+    Exclude:
+      - 'features/support/factories/*.rb'
+
+  Metrics/CyclomaticComplexity:
+    Max: 15
+
+  Metrics/ClassLength:
+    Enabled: false
+
+  Metrics/PerceivedComplexity:
+    Max: 15
+
+  Metrics/ParameterLists:
+    Enabled: false
