@@ -4,6 +4,7 @@ require 'correios-cep'
 require 'cucumber'
 require 'date'
 require 'dotenv/load'
+require 'factory_bot'
 require 'faker'
 require 'httparty'
 require 'httparty/request'
@@ -14,9 +15,13 @@ require 'pry-nav'
 require 'pry-remote'
 require 'report_builder'
 require 'rspec'
+require 'json_matchers/rspec'
 
 CONFIG = YAML.load_file(File.join(Dir.pwd, "features/support/config/environments/#{ENV['ENV_TYPE']}.yml"))
-QUERY_MONGO = YAML.load_file('features/support/libs/query_mongo.yml')
+
+JsonMatchers.schema_root = File.join(Dir.pwd, 'features/support/data/schemas')
+
+World(FactoryBot::Syntax::Methods)
 
 Correios::CEP.configure do |config|
   config.request_timeout = 3

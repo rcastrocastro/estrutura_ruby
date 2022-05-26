@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" errors="0" skipped="1" tests="1" time="0.004229" name="Post Criar customer">
+<testcase classname="Post Criar customer" name="Create new Customer" time="0.004229">
+  <skipped/>
+  <system-out>
+    <![CDATA["\n--------------------------------------------------------------------------------------------------"
+"Results:"
+" - Scenario......: Create new Customer"
+" - The results is: [ ❌ ]"
+"--------------------------------------------------------------------------------------------------\n"
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>
