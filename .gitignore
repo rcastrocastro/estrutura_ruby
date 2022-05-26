@@ -2,4 +2,4 @@
 Gemfile.lock
 report/*.html
 report/*.json
-report/*.xml
+report/junit/*.xml
